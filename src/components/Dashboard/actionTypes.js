@@ -1,0 +1,1 @@
+export const GET_STAT_SUCCEEDED = 'get_started'
