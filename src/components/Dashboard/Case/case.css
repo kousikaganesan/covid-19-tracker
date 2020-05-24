@@ -1,0 +1,21 @@
+.case {
+  padding: 34px;
+}
+
+.case--title {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.case--count {
+  font-size: 20px;
+  line-height: 24px;
+}
+.case--new {
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #5D3975;
+}
