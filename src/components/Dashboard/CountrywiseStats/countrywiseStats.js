@@ -5,6 +5,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import ReactCountryFlag from "react-country-flag";
 
 import "./countrywiseStats.css";
 
@@ -23,14 +24,19 @@ const CountrywiseStats = ({ dataSet = [] }) => {
           <TableHead>
             <TableRow>
               {columns.map((column) => (
-                <TableCell key={column.id}><b>{column.label}</b></TableCell>
+                <TableCell key={column.id}>
+                  <div className="table-head">{column.label}</div>
+                </TableCell>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
             {dataSet.map((data) => (
               <TableRow key={data.Country}>
-                <TableCell>{data.Country}</TableCell>
+                <TableCell>
+                  <ReactCountryFlag className="flag" countryCode={data.CountryCode} svg/>
+                  {data.Country}
+                </TableCell>
                 <TableCell>{data.TotalConfirmed}</TableCell>
                 <TableCell>{data.TotalDeaths}</TableCell>
                 <TableCell>{data.TotalRecovered}</TableCell>
