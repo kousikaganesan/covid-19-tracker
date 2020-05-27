@@ -20,12 +20,12 @@ const CountrywiseStats = ({ dataSet = [] }) => {
   return (
     <div className="case">
       <TableContainer>
-        <Table stickyHeader>
+        <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
               {columns.map((column) => (
-                <TableCell key={column.id}>
-                  <div className="table-head">{column.label}</div>
+                <TableCell key={column.id} >
+                  <span className="table-head">{column.label}</span>
                 </TableCell>
               ))}
             </TableRow>
@@ -34,12 +34,24 @@ const CountrywiseStats = ({ dataSet = [] }) => {
             {dataSet.map((data) => (
               <TableRow key={data.Country}>
                 <TableCell>
-                  <ReactCountryFlag className="flag" countryCode={data.CountryCode} svg/>
-                  {data.Country}
+                  <span className="table-item">
+                    <ReactCountryFlag
+                      className="flag"
+                      countryCode={data.CountryCode}
+                      svg
+                    />
+                    {data.Country}
+                  </span>
                 </TableCell>
-                <TableCell>{data.TotalConfirmed}</TableCell>
-                <TableCell>{data.TotalDeaths}</TableCell>
-                <TableCell>{data.TotalRecovered}</TableCell>
+                <TableCell>
+                  <span className="table-item">{data.TotalConfirmed}</span>
+                </TableCell>
+                <TableCell>
+                  <span className="table-item">{data.TotalDeaths}</span>
+                </TableCell>
+                <TableCell>
+                  <span className="table-item">{data.TotalRecovered}</span>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

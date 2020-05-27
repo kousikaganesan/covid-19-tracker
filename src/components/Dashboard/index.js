@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Header from "./Header/header.js";
 import Search from "./Search/search.js";
 import CountrywiseStats from "./CountrywiseStats/countrywiseStats.js";
-import { getStats } from "./action.js";
+import { getStats, search } from "./action.js";
 import "./index.css";
 class Dashboard extends React.Component {
   constructor(props) {
@@ -19,20 +19,24 @@ class Dashboard extends React.Component {
   }
 
   search(e) {
-    console.log(e.target.value);
+    if(e.target.value) {
+      this.props.search(e.target.value);
+    } else {
+      this.props.getStats();
+    }
   }
 
   render() {
-    const { Global = {}, Countries = [] } = this.props.dashboard.stats;
+    const { global = {}, countries = [] } = this.props.dashboard;
 
     return (
       <div>
-        <Header global={Global} />
+        <Header global={global} />
         <div className="search-wrapper">
           <Search onChange={(e) => this.search(e)} />
         </div>
         <div className="countrywise-wrapper">
-          <CountrywiseStats dataSet={Countries} />
+          <CountrywiseStats dataSet={countries} />
         </div>
       </div>
     );
@@ -41,4 +45,4 @@ class Dashboard extends React.Component {
 
 const mapStateToProps = (state) => state;
 
-export default connect(mapStateToProps, { getStats })(Dashboard);
+export default connect(mapStateToProps, { getStats, search })(Dashboard);
