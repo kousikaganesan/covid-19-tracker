@@ -1,3 +1,9 @@
 .MuiTableCell-stickyHeader {
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.flag {
+  width: 25px !important;
+  height: 20px !important;
+  margin-right: 5px;
 }
