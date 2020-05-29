@@ -44,6 +44,6 @@ In the project directory,
 npm run build
 ```
 
-### 💾 Data Sources
+### 📝 Data Sources
 
 For all information regarding the data powering this site, please visit https://covid19api.com.
