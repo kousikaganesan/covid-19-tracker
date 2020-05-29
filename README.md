@@ -51,5 +51,3 @@ npm run build
 ### 📝 Data Sources
 
 For all information regarding the data powering this site, please visit https://covid19api.com.
-
-© [kousikaganesan](https://github.com/kousikaganesan)
