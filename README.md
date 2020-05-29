@@ -12,7 +12,9 @@
     </a>
 </p>
 
-_A real time application to track the COVID-19 cases around the world_
+<p align="center">
+    A real time application to track the COVID-19 cases around the world
+</p>
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/20679183/83302921-cae35680-a219-11ea-8c95-18e50bae0211.png">
