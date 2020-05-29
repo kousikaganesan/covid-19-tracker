@@ -1,23 +1,49 @@
-# COVID-19 Tracker
+<h1 align="center">COVID-19 Tracker </h1>
 
+<p align="center">
+    <a href="https://reactjs.org/">
+        <img src="https://img.shields.io/badge/React-16.13.1-blue">
+    </a>
+    <a href="#">
+        <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat">
+    </a>
+</p>
 
-## Available Scripts
+_A real time application to track the COVID-19 cases around the world_
 
-In the project directory, you can run:
+![Screenshot from 2020-05-30 02-00-27](https://user-images.githubusercontent.com/20679183/83302921-cae35680-a219-11ea-8c95-18e50bae0211.png)
 
-### `npm start`
+### 🛠 Installing
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the project directory, 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Install dependencies
 
-### `npm run build`
+   
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+2. Run the app in the development mode
 
+   
+
+``` bash
+   npm start
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### 🚀 Build the app and minify for production
+
+``` bash
+npm run build
+```
+
+### 💾 Data Sources
+
+For all information regarding the data powering this site, please visit https://covid19api.com.
