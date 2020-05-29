@@ -14,7 +14,9 @@
 
 _A real time application to track the COVID-19 cases around the world_
 
-![Screenshot from 2020-05-30 02-00-27](https://user-images.githubusercontent.com/20679183/83302921-cae35680-a219-11ea-8c95-18e50bae0211.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/20679183/83302921-cae35680-a219-11ea-8c95-18e50bae0211.png">
+</p>
 
 ### 🛠 Installing
 
