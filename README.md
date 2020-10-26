@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-    A real time application to track the COVID-19 cases around the world
+    A real time application to track the COVID-19 cases around the world. It acts as a portal for the public to keep track of the latest news development about the COVID-19, alongside collecting data for further analysis. 
 </p>
 
 <p align="center">
@@ -51,3 +51,6 @@ npm run build
 ### 📝 Data Sources
 
 For all information regarding the data powering this site, please visit https://covid19api.com.
+
+
+
