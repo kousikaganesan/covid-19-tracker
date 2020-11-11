@@ -2,7 +2,7 @@
   /* position: relative;
   height: 346px; */
   background-image: url("../../../assets/illustration.png");
-  /* background-size: contain; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
