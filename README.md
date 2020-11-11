@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-    A real time application to track the COVID-19 cases around the world. It helps the public to keep track of the latest news development about the COVID-19 alongside collecting data for further analysis.
+    A real time application to track the COVID-19 cases around the world. It helps the public to keep track of the latest informatiom about the COVID-19 alongside collecting data for further analysis.
 </p>
 
 <p align="center">
